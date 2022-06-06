@@ -1,0 +1,73 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRADIENTES */
+
+body{
+    /* background: linear-gradient(to right, #f6f6f6, rgb(141, 216, 216)
+    ); */
+    background: radial-gradient(circle,#f1f1f1,#f3f3);
+}
+h1{ 
+    margin-top: 100px;
+    text-align: center;
+}
+/* PROPIEDADES DE LA CAJA
+TRANSFORMACIONES */
+
+.caja{
+
+width: 250px;
+height: 250px;
+background-color: tomato;
+margin:2rem;
+
+border: 5px solid black;
+/* transform: translate(30px, -5px); */
+/* transform: rotate(-10deg); */
+/* transform: scale(1.2); */
+/* se pone en el padre para que funcione de ida y vuelta  */
+transition: .5s;
+/* transition: width 1s,height 3s; */
+
+}
+
+/*  PSEUDOCLASE HOVER  solo en computadoras de escritorio */
+
+.caja:hover{
+    /* color:white;
+    font-size: 50px;
+    border-radius: 100%; */
+    background-color: burlywood;
+    /* transform: translate(10px, 20px); */
+    /* transform: rotate(50deg); */
+    transform: scale(1.1);
+    /* width: 100px;
+    height: 100px; */
+    /* transform:rotate(360deg); */
+}
+
+
+/* animaciones */
+img{
+    width: 60%;
+}
+
+.girar{
+    animation-name:girar;
+    animation-iteration-count: infinite ;
+    animation-duration: 120s;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
